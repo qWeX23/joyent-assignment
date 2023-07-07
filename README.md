@@ -4,7 +4,7 @@ In order to assess your skills and approach please follow the instructions below
 ## Go Application
 Write a simple API in Go which contains as many endpoints as you wish but should have at least 3
 * `/devices` this endpoint should return a list of devices.
-* `/interfaces` this endpoint shoud return a list of interfaces.
+* `/interfaces` this endpoint should return a list of interfaces.
 * `/reports` this endpoint should use the below JSON Object as POST payload to populate the device and interface information.
 
 ### JSON Object
@@ -56,3 +56,12 @@ The above environment should run with a simple `docker compose up` command. The 
 * Create a github repo
 * Push all code necessary for completing this task
 * Share the repo with user [bdelano](https://github.com/bdelano)
+
+
+# TODO
+- tests!
+    - Investigate unit testing 
+    - Add functional tests
+    - Investigate automatic tests
+- Write out assumptions and commentary
+- review code more. 
