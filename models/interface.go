@@ -4,13 +4,13 @@ import "gorm.io/gorm"
 
 type Interface struct {
 	gorm.Model
-	Name        string `json:"name"`
-	MAC         string `json:"mac"`
-	Description string `json:"description"`
-	Driver      string `json:"driver"`
-	//ARP         ARP      `json:"arp"`
-	IPInfo []IPInfo `json:"ipinfo"`
-	Parent string   `json:"parent"`
+	Name        string   `json:"name"`
+	MAC         string   `json:"mac"`
+	Description string   `json:"description"`
+	Driver      string   `json:"driver"`
+	ARP         ARP      `json:"arp"`
+	IPInfo      []IPInfo `json:"ipinfo"`
+	Parent      string   `json:"parent"`
 }
 
 type IPInfo struct {
@@ -23,4 +23,5 @@ type IPInfo struct {
 
 type ARP struct {
 	gorm.Model
+	InterfaceID uint
 }

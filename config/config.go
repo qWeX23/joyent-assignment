@@ -19,7 +19,6 @@ func NewEnv() Env {
 		DbName:     os.Getenv("POSTGRES_DB"),
 		DbPassword: os.Getenv("POSTGRES_PASSWORD"),
 	}, log)
-	sql.Migrate()
 	return Env{
 		Db:  sql,
 		Log: log,

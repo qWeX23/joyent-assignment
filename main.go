@@ -14,6 +14,7 @@ var env config.Env
 
 func init() {
 	env = config.NewEnv()
+	env.Db.Migrate()
 }
 
 func main() {
