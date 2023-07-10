@@ -1,6 +1,9 @@
 # Joyent CDT code challenge
 In order to assess your skills and approach please follow the instructions below.
 
+## Assumptions
+See the assumptions and commentary [here](./AssumptionsAndComments.md) 
+
 ## Go Application
 Write a simple API in Go which contains as many endpoints as you wish but should have at least 3
 * `/devices` this endpoint should return a list of devices.
@@ -63,5 +66,5 @@ The above environment should run with a simple `docker compose up` command. The 
     - Investigate unit testing 
     - Add functional tests
     - Investigate automatic tests
-- Write out assumptions and commentary
 - review code more. 
+- Add CI 
